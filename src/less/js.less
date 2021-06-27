@@ -1,0 +1,67 @@
+.js{
+	.flex-centre;
+	margin-bottom: 70px;
+	&-range{
+		display: flex;
+		width: 100%;
+		&-item{
+			width: 25%;
+			display: flex;
+			align-items: flex-end;
+			text-align: left;
+			color: #2E211C;
+			font-weight: 300;
+			font-size: 13px;
+			&:last-child{
+				justify-content: flex-end;
+			}
+		}
+	}
+	&-level{
+		width: 100%;
+		position: relative;
+		height: 32px;
+		
+		&-items{
+			width: 100%;
+			display: flex;
+			height: 32px;
+			position: absolute;
+		}
+		&-range{			
+			width: 25%;
+			height: 32px;
+			border-left: 1px dotted #b4b4b4;
+
+		}
+		&-pic{
+			width: 100%;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			height: 14px;
+		}
+		&-closing{
+			width: 100%;
+			display: flex;
+			height: 32px;
+			position: absolute;
+			.js-closed{
+				background: #fff;
+			}
+		}
+		&-item{
+			height: 32px;
+			width: 25%;
+			cursor: pointer;
+			position: relative;
+			img{
+				position: absolute;
+				right: -5%;
+				bottom: -85%;
+				width: 22px;
+				height: 25px;
+			}
+		}
+	}	  
+}

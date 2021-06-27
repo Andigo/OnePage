@@ -1,0 +1,45 @@
+.personal{
+	.flex-centre;	
+	form{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 70%;
+		margin-top: 70px;
+		input,select{
+			width: 350px;
+			border: none;
+			outline: none;
+			color: #c8c8c8;
+			font-size: 24px;
+			font-weight: 400;
+			text-align-last: center;
+			margin-bottom: 50px;
+			&::placeholder {
+  				color: #c8c8c8;
+			}
+			option{
+				text-align-last: center;
+				width: 20%;
+			}
+		}
+	}
+	&-form{
+		&-select{
+			display: flex;
+			position: relative;
+			select{
+				appearance: none;
+				cursor: pointer;
+			}
+		}
+
+		&-btn{
+			width: 30px;
+			height: 30px;
+  			background: url('../img/Shape-2 copy.png') no-repeat right;
+  			position: absolute;
+  			right: 10%;
+		}		
+	}	
+}
